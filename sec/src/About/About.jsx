@@ -3,10 +3,11 @@ import AboutsCard from '../AboutsCard/AboutsCard';
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row mt-10 mx-4 lg:mx-18 gap-10">
-      {/* Left Side */}
-      <div className="w-full lg:w-1/2">
-        <h1 className="text-3xl sm:text-4xl font-bold">
+    <div className="flex flex-col lg:flex-row  mx-4 lg:mx-18 gap-10">
+    
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+        {/* ✅ Center on mobile, left on desktop */}
+        <h1 className="text-4xl sm:text-5xl font-bold">
           Our <span className="text-yellow-500">Legacy</span>
         </h1>
         <p className="mt-4 mb-5 text-base sm:text-lg">
@@ -24,7 +25,7 @@ const About = () => {
       </div>
 
       {/* Right Side - Image with Overlay */}
-      <div className="relative w-full lg:w-1/2 flex itmes-center justify-center mt-33 ">
+      <div className="relative w-full lg:w-1/2 flex itmes-center justify-center mt-4 ">
         <img
           src="aboutimg.png"
           alt="logo"
@@ -36,7 +37,7 @@ const About = () => {
           <p className="text-xl sm:text-2xl font-bold text-black">
             Master Craftsmanship
           </p>
-          <p className="text-sm sm:text-base text-black mt-2">
+          <p className="text-sm sm:text-base text-black ">
             Every piece is handcrafted by our skilled artisans using traditional
             techniques passed down through generations.
           </p>
