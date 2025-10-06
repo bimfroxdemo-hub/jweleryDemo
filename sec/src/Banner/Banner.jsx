@@ -2,7 +2,8 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative h-[90vh] md:h-screen w-full">
+    // 👇 we’ll make height slightly smaller on mobile
+    <div className="relative h-[calc(60vh-40px)] sm:h-[80vh] md:h-screen w-full">
       {/* Background Image with Light Blur */}
       <img
         src="bg.png"
